@@ -5,7 +5,7 @@ pipeline{
         AWS_ACCOUNT_ID = "AdminAccess-853219709078"
         AWS_REGION = "ap-south-1"
         ECR_REPO_NAME = "my-demo-app"
-        ECS_CLUSTER_NAME = my-dem-cluster
+        ECS_CLUSTER_NAME = "my-dem-cluster"
         
         IMAGE_NAME = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO_NAME}:${env.BUILD_ID}"
     }
